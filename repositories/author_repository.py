@@ -33,4 +33,9 @@ def select(id):
         author = Author(result['name'], result['id'])
     return author
 
+def delete(id):
+    sql = "DELETE  FROM authors WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
+
 
