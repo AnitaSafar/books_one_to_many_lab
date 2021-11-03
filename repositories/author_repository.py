@@ -32,3 +32,5 @@ def select(id):
     if result is not None:
         author = Author(result['name'], result['id'])
     return author
+
+
