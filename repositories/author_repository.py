@@ -38,4 +38,8 @@ def delete(id):
     values = [id]
     run_sql(sql, values)
 
+def delete_all():
+    sql = "DELETE FROM authors"
+    run_sql(sql)
+
 
